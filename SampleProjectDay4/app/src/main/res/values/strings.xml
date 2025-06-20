@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Sample Project Day4</string>
+
+    <string name="personalData_text1">Your Name</string>
+    <string name="personalData_text2">Date of Birth</string>
+    <string name="personalData_text3">Your Job</string>
+    <string name="personalData_text4">Monthly Income</string>
+    <string name="personalData_text5">Gender</string>
+    <string name="personalData_hint1">ex: John Smith</string>
+    <string name="personalData_checkbox_male">Male</string>
+    <string name="personalData_checkbox_female">Female</string>
+
+    <string name="community_text1">Learn Stock, Educate the World</string>
+    <string name="community_hint1">Search Something</string>
+
+    <string name="fragmentForumCard_text1">How to start investing in Stock</string>
+    <string name="fragmentForumCard_text2">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since...
+    </string>
+    <string name="fragmentForumCard_btn1">Join Forum</string>
+
+    <string name="fragmentHome_text1">Home Fragment. Click the tabs below to change the interface</string>
+    <string name="fragmentStatistics_text1">Statistics Fragment. Click the tabs below to change the interface</string>
+    <string name="fragmentNotifications_text1">Notifications Fragment. Click the tabs below to change the interface</string>
+
+    <string name="fragmentUser_text1">Williams John Malik</string>
+    <string name="fragmentUser_text2">Aggressive Investor</string>
+    <string name="fragmentUser_btn1">Personal Data</string>
+    <string name="fragmentUser_btn2">Settings</string>
+    <string name="fragmentUser_btn3">E-Statement</string>
+    <string name="fragmentUser_btn4">Referral Code</string>
+    <string name="fragmentUser_btn5">FAQs</string>
+    <string name="fragmentUser_btn6">Our Handbook</string>
+    <string name="fragmentUser_btn7">Community</string>
+    <string name="fragmentUser_btn8">Feel Free To Ask, We Ready to Help</string>
+
+    <string name="main_btn1">Go to Day 4 Project</string>
+    <string name="main_btn2">Personal data</string>
+    <string name="main_btn3">Community</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainUserFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.ui.UserFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_faqs"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn5"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_handbook"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn6"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_community"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn7"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/sample_user"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/roundedImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/roundedImageView"
+                app:layout_constraintTop_toTopOf="@+id/roundedImageView">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/fragmentUser_text1"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/fragmentUser_text2"
+                    android:textColor="@color/secondary_textColor"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roundedImageView" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_personal_data"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn1"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_settings"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn2"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_statement"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn3"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/image_button_background"
+                    android:drawableLeft="@drawable/ic_referral"
+                    android:drawableRight="@drawable/ic_caret_right2"
+                    android:fontFamily="sans-serif-medium"
+                    android:paddingHorizontal="0dp"
+                    android:text="@string/fragmentUser_btn4"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/primary_textColor"
+                    android:textSize="16sp"
+                    app:cornerRadius="@dimen/button_corner_radius" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="@color/secondary_bg"
+                android:drawableLeft="@drawable/ic_headset"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/fragmentUser_btn8"
+                android:textColor="@color/tertiary_textColor"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/button_corner_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

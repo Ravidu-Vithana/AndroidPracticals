@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Headline</string>
+    <string name="base_url">https://newsapi.org/v2/</string>
+</resources>

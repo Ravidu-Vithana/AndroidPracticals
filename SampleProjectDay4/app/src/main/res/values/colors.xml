@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_textColor">#364163</color>
+    <color name="secondary_textColor">#858c93</color>
+    <color name="tertiary_textColor">#6a75e1</color>
+    <color name="primary_iconColor">#d4d4d4</color>
+    <color name="primary_iconColor_selected">#919191</color>
+    <color name="secondary_iconColor">#4b4c56</color>
+    <color name="secondary_iconColor_bg">#dedcfd</color>
+    <color name="primary_bg">#ffffff</color>
+    <color name="secondary_bg">#e9e8fa</color>
+    <color name="tertiary_bg">#fdfdfd</color>
+    <color name="primary_line_color">#e3e4eb</color>
+</resources>

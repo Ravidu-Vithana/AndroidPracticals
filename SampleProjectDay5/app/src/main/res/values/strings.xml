@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Sample Project Day 5</string>
+
+    <string name="main_text1">Hey Halal</string>
+    <string name="main_text2">Good Afternoon</string>
+    <string name="main_text3">Best Sellers</string>
+    <string name="main_text4">Peperoni Pizza</string>
+    <string name="main_text5">Bologness</string>
+    <string name="main_text6">Pizza</string>
+    <string name="main_text7">$16.00</string>
+    <string name="main_text8">All Categories</string>
+    <string name="main_text9">Veg Pizza</string>
+    <string name="main_btn1">See All</string>
+    <string name="main_btn2">All</string>
+    <string name="main_btn3">Desert</string>
+    <string name="main_btn4">Pizza</string>
+    <string name="main_btn5">Burger</string>
+    <string name="main_hint1">Search food</string>
+
+    <string name="product_text1">Beef Cheesy Delight</string>
+    <string name="product_text2">$16.00</string>
+    <string name="product_text3">12k sold</string>
+    <string name="product_text4">4.5 review</string>
+    <string name="product_text5">12 min</string>
+    <string name="product_text6">1.4 Km</string>
+    <string name="product_text7">Details</string>
+    <string name="product_text8">
+        Enjoy the crisp crunch of a classic Greek salad, tossed with juicy tomato, cucumber, olives and feta cheese....
+    </string>
+    <string name="product_text9">Extras</string>
+    <string name="product_text10">$0.10</string>
+    <string name="product_text11">$0.60</string>
+    <string name="product_btn1">Read More</string>
+    <string name="product_btn2">Spicy</string>
+    <string name="product_btn3">Mayonnaise</string>
+
+    <string name="productList_text1">Select Food</string>
+    <string name="productList_btn1">Pizza</string>
+    <string name="productList_btn2">Burger</string>
+    <string name="productList_btn3">Submarine</string>
+
+    <string name="productItem_text1">Chicken Devilled</string>
+    <string name="productItem_text2">5mins</string>
+    <string name="productItem_text3">$12.50</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

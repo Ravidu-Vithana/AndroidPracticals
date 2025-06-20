@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundedImageView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">40dp</item>
+        <item name="cornerSizeBottomRight">40dp</item>
+    </style>
+    <style name="YellowRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/primary_yellow</item>
+        <item name="colorControlActivated">@color/primary_yellow</item>
+    </style>
+</resources>
