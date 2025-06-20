@@ -24,33 +24,40 @@ An introduction to Jetpack Compose:
 - State handling
 - Basic navigation
 
-### 5. **NavigationGraph**
+### 5. **LayoutRevision**
+Explores various XML layout types and related UI features:
+- ConstraintLayout, RelativeLayout, TableLayout, FrameLayout, TabbedLayout
+- RecyclerView and ListView implementations
+- Navigation Drawer integration
+- Basic Android UI animations
+
+### 6. **NavigationGraph**
 Implements the Android Jetpack Navigation component:
 - Navigation Graph XML
 - Fragment transitions
 
-### 6. **SampleProjectDay4**
+### 7. **SampleProjectDay4**
 A day-wise Android practice project for Day 4:
 - Core Android concepts
 - UI building
 - Code structuring
 
-### 7. **SampleProjectDay5**
+### 8. **SampleProjectDay5**
 Continuation of daily practice on Day 5:
 - Hands-on UI/UX
 - RecyclerView
 
-### 8. **SharedPreferences**
+### 9. **SharedPreferences**
 Demonstrates data persistence using:
 - SharedPreferences for key-value storage
 - Secure and lightweight storage examples
 
-### 9. **ViewBinding**
+### 10. **ViewBinding**
 Showcases how to use ViewBinding to safely and efficiently interact with UI components.
 
 ---
 
-##  How to Run
+## 🔧 How to Run
 
 1. Clone the repository.
 2. Open the specific project folder in **Android Studio**.
