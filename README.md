@@ -50,7 +50,7 @@ Showcases how to use ViewBinding to safely and efficiently interact with UI comp
 
 ---
 
-## 🧑‍💻 How to Run
+##  How to Run
 
 1. Clone the repository.
 2. Open the specific project folder in **Android Studio**.
@@ -63,13 +63,6 @@ Showcases how to use ViewBinding to safely and efficiently interact with UI comp
 ## 📚 Purpose
 
 This repository was created as part of my supervised study and experimentation with various Android development concepts. It serves as a showcase for my progress and understanding of core topics in Android.
-
----
-
-## 🔗 Author
-
-**Ravidu Vithana**  
-[GitHub Profile](https://github.com/Ravidu-Vithana)
 
 ---
 
