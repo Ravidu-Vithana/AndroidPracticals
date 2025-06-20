@@ -47,7 +47,15 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposeTheme {
-                Ui()
+                Scaffold (content = { innerPadding ->
+                    Column (
+                        modifier = Modifier
+                            .padding(innerPadding)
+                            .fillMaxSize()
+                    ) {
+                        Ui()
+                    }
+                })
             }
         }
     }
