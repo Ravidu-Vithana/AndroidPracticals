@@ -1,4 +1,4 @@
-package com.ryvk.androidarchitecturecomponents
+package com.ryvk.androidarchitecturecomponents.mvvm
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
+import com.ryvk.androidarchitecturecomponents.R
 import com.ryvk.androidarchitecturecomponents.databinding.ActivityLiveDataBinding
 
 class LiveDataActivity : AppCompatActivity() {

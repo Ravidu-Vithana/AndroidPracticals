@@ -1,4 +1,4 @@
-package com.ryvk.androidarchitecturecomponents
+package com.ryvk.androidarchitecturecomponents.mvvm
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
+import com.ryvk.androidarchitecturecomponents.R
+import com.ryvk.androidarchitecturecomponents.mvc.MvcActivity
+import com.ryvk.androidarchitecturecomponents.mvp.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         val textView: TextView = findViewById(R.id.textView)
         val button : Button = findViewById(R.id.button)
         val button2 : Button = findViewById(R.id.button2)
+        val button3 : Button = findViewById(R.id.button3)
+        val button5 : Button = findViewById(R.id.button5)
 
 //        var number = 0;
 //
@@ -43,7 +48,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         button2.setOnClickListener{
-            startActivity(Intent(this@MainActivity,LiveDataActivity::class.java))
+            startActivity(Intent(this@MainActivity, LiveDataActivity::class.java))
+        }
+
+        button3.setOnClickListener{
+            startActivity(Intent(this@MainActivity, MvcActivity::class.java))
+        }
+
+        button5.setOnClickListener{
+            startActivity(Intent(this@MainActivity, LoginActivity::class.java))
         }
 
     }

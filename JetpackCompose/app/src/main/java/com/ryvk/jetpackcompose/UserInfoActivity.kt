@@ -2,6 +2,7 @@ package com.ryvk.jetpackcompose
 
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -18,6 +19,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Button
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -30,6 +32,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -45,69 +48,70 @@ class UserInfoActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetpackComposeTheme {
-                Scaffold (content = { innerPadding ->
-                    Column (
-                        modifier = Modifier
-                            .padding(innerPadding)
-                            .fillMaxSize()
-                    ) {
-                        ImageViewer()
-                    }
-                })
+                Ui()
             }
         }
     }
 }
 
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun Ui() {
 
-@Preview(showBackground = true)
-@Composable
-fun ImageViewer() {
+    val context = LocalContext.current
 
-    JetpackComposeTheme {
-        val cameraPainter = painterResource(R.drawable.ic_camera)
-        val dogBitmap = ImageBitmap.imageResource(R.drawable.dog)
-
-
-        ConstraintLayout (
+    Scaffold (content = { innerPadding ->
+        Column (
             modifier = Modifier
+                .padding(innerPadding)
                 .fillMaxSize()
         ) {
-            val (button, image) = createRefs()
+            val cameraPainter = painterResource(R.drawable.ic_camera)
+            val dogBitmap = ImageBitmap.imageResource(R.drawable.dog)
 
-            Canvas(
+
+            ConstraintLayout (
                 modifier = Modifier
-                    .size(100.dp)
-                    .clip(CircleShape)
-                    .constrainAs(image) {
-                        top.linkTo(parent.top, margin = 24.dp)
-                        centerHorizontallyTo(parent)
-                    }
+                    .fillMaxSize()
             ) {
-                drawImage(
-                    image = dogBitmap,
-                    dstSize = IntSize(size.width.toInt(), size.height.toInt())
-                )
-            }
+                val (button, image) = createRefs()
 
-            Image(
-                painter = cameraPainter,
-                contentDescription = "Image picker",
-                modifier = Modifier
-                    .size(50.dp)
-                    .clip(CircleShape)
-                    .constrainAs(button){
-                        bottom.linkTo(image.bottom)
-                        end.linkTo(image.end)
-                    }
-            )
+                Canvas(
+                    modifier = Modifier
+                        .size(100.dp)
+                        .clip(CircleShape)
+                        .constrainAs(image) {
+                            top.linkTo(parent.top, margin = 24.dp)
+                            centerHorizontallyTo(parent)
+                        }
+                ) {
+                    drawImage(
+                        image = dogBitmap,
+                        dstSize = IntSize(size.width.toInt(), size.height.toInt())
+                    )
+                }
+
+                IconButton (
+                    onClick = {
+                    Toast.makeText(context,"Changing image", Toast.LENGTH_LONG).show()
+                    },
+                    modifier = Modifier
+                        .constrainAs(button){
+                            bottom.linkTo(image.bottom)
+                            end.linkTo(image.end)
+                        }
+                ) {
+                    Image(
+                        painter = cameraPainter,
+                        contentDescription = "Image picker",
+                        modifier = Modifier
+                            .size(50.dp)
+                            .clip(CircleShape)
+
+                    )
+                }
+
+            }
         }
-    }
+    })
 }

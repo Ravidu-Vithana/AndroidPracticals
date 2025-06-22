@@ -1,4 +1,4 @@
-package com.ryvk.androidarchitecturecomponents
+package com.ryvk.androidarchitecturecomponents.mvvm
 
 import android.os.CountDownTimer
 import androidx.lifecycle.LiveData

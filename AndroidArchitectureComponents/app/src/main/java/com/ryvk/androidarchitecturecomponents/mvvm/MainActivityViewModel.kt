@@ -1,4 +1,4 @@
-package com.ryvk.androidarchitecturecomponents
+package com.ryvk.androidarchitecturecomponents.mvvm
 
 import androidx.lifecycle.ViewModel
 
