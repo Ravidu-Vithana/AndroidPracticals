@@ -31,5 +31,8 @@ class MainActivity : AppCompatActivity() {
         controllerButton.setOnClickListener(ControllerButton.Type.BUTTON_RIGHT){
             Toast.makeText(this@MainActivity,"Clicked right",Toast.LENGTH_SHORT).show()
         }
+        controllerButton.setOnClickListener(ControllerButton.Type.BUTTON_MIDDLE){
+            Toast.makeText(this@MainActivity,"Clicked middle",Toast.LENGTH_SHORT).show()
+        }
     }
 }

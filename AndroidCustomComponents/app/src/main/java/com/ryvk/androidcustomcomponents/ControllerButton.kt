@@ -57,9 +57,9 @@ class ControllerButton : FrameLayout {
         middleButton.backgroundTintList = ColorStateList.valueOf(color)
     }
 
-    fun setOnClickListener(button: Type, l: OnClickListener?) {
+    fun setOnClickListener(button: Type, listener: OnClickListener?) {
         val selectedButton = resolveButton(button)
-        selectedButton.setOnClickListener(l)
+        selectedButton.setOnClickListener(listener)
     }
 
     private fun resolveButton(button: Type) = when(button) {
