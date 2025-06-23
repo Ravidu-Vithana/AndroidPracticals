@@ -10,6 +10,8 @@ import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.ryvk.sampleprojectday5.R
 
 
@@ -26,7 +28,17 @@ class ProductActivity : AppCompatActivity() {
 
         descriptionText = findViewById(R.id.textView19)
         descriptionText.text = descriptionTextContent
-        changeDescriptionText(true)
+        changeDescriptionText(shorten = true)
+
+        val productExtrasList = listOf<ProductExtras>(
+            ProductExtras("Spicy","$0.10"),
+            ProductExtras("Mayonaise","$0.60")
+        )
+
+        val productExtrasAdapter = ProductExtrasAdapter(productExtrasList)
+        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this@ProductActivity)
+        recyclerView.adapter = productExtrasAdapter
 
     }
 
@@ -37,7 +49,7 @@ class ProductActivity : AppCompatActivity() {
             var sampleDescriptionShortened : String;
 
             if(descriptionTextContent.length > 100){
-                sampleDescriptionShortened = descriptionTextContent.substring(0,90)+"....Read More"
+                sampleDescriptionShortened = descriptionTextContent.substring(0,90)+".... Read More"
                 val ss = SpannableString(sampleDescriptionShortened)
 
                 // creating clickable span to be implemented as a link
@@ -47,7 +59,7 @@ class ProductActivity : AppCompatActivity() {
                         changeDescriptionText(false)
                     }
                 }
-                ss.setSpan(clickableSpan1, 94, 103, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                ss.setSpan(clickableSpan1, 95, 104, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                 descriptionText.text =ss
             }
         }else{
@@ -64,6 +76,6 @@ class ProductActivity : AppCompatActivity() {
 
             descriptionText.text = ss
         }
-        descriptionText.setMovementMethod(LinkMovementMethod.getInstance());
+        descriptionText.movementMethod = LinkMovementMethod.getInstance();
     }
 }

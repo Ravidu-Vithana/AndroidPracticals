@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productExtraMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/extrasRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:checked="false"
+        android:clickable="false"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="10dp"
+        android:text="@string/product_btn2"
+        android:textAlignment="viewStart"
+        android:textColor="@color/primary_black"
+        android:theme="@style/YellowRadioButton" />
+
+    <TextView
+        android:id="@+id/extrasPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/product_text10"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/tertiary_textColor" />
+
+</LinearLayout>
