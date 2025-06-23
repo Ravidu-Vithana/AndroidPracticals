@@ -63,6 +63,7 @@
                     android:layout_height="40dp"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
+                    android:elevation="5sp"
                     app:shapeAppearanceOverlay="@style/roundedImageView"
                     app:srcCompat="@drawable/sample_user" />
 
@@ -72,6 +73,7 @@
                     android:layout_height="40dp"
                     android:layout_marginEnd="10dp"
                     android:layout_weight="1"
+                    android:elevation="5sp"
                     app:shapeAppearanceOverlay="@style/roundedImageView"
                     app:srcCompat="@drawable/sample_user" />
             </LinearLayout>

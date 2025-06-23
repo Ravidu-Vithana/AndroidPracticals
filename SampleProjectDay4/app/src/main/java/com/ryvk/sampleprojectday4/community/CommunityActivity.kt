@@ -4,6 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.RelativeLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -74,6 +75,11 @@ class CommunityActivity : AppCompatActivity() {
         val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this@CommunityActivity)
         recyclerView.adapter = forumAdapter
+
+        val button: ImageButton = findViewById(R.id.imageButton11)
+        button.setOnClickListener {
+            onBackPressed()
+        }
 
     }
 }

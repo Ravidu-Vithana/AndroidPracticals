@@ -2,6 +2,7 @@ package com.ryvk.sampleprojectday4.personalDetails
 
 import android.os.Bundle
 import android.widget.EditText
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,6 +25,9 @@ class PersonalDataActivity : AppCompatActivity() {
             val datePickerBottomSheet = DatePickerBottomSheet(this@PersonalDataActivity)
             datePickerBottomSheet.show(supportFragmentManager,"DatePickerSheet")
         }
-
+        val button: ImageButton = findViewById(R.id.imageButton11)
+        button.setOnClickListener {
+            onBackPressed()
+        }
     }
 }

@@ -5,6 +5,7 @@
     android:id="@+id/mainUserFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/image_button_background"
     tools:context=".home.ui.UserFragment">
 
 
@@ -32,54 +33,96 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider3">
-
-                <Button
-                    android:id="@+id/button5"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_faqs"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn5"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_handbook"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn6"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
 
-                <Button
-                    android:id="@+id/button7"
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_faqs" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn5"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_community"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn7"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_handbook" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn6"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_community" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn7"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -89,6 +132,7 @@
                 android:layout_height="70dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="24dp"
+                android:elevation="5sp"
                 android:src="@drawable/sample_user"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -167,69 +211,126 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider2">
 
-                <Button
-                    android:id="@+id/button9"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_personal_data"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn1"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_settings"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn2"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
 
-                <Button
-                    android:id="@+id/button11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_statement"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn3"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
+                    <ImageButton
+                        android:id="@+id/imageButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_personal_data" />
 
-                <Button
-                    android:id="@+id/button8"
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn1"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:background="@drawable/image_button_background"
-                    android:drawableLeft="@drawable/ic_referral"
-                    android:drawableRight="@drawable/ic_caret_right2"
-                    android:fontFamily="sans-serif-medium"
-                    android:paddingHorizontal="0dp"
-                    android:text="@string/fragmentUser_btn4"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/primary_textColor"
-                    android:textSize="16sp"
-                    app:cornerRadius="@dimen/button_corner_radius" />
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_settings" />
+
+                    <Button
+                        android:id="@+id/button12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn2"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_statement" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn3"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:background="@drawable/shadow_icon_button_background"
+                        android:elevation="2sp"
+                        android:src="@drawable/ic_referral" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/image_button_background"
+                        android:drawableRight="@drawable/ic_caret_right2"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingHorizontal="0dp"
+                        android:text="@string/fragmentUser_btn4"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/primary_textColor"
+                        android:textSize="16sp"
+                        app:cornerRadius="@dimen/button_corner_radius" />
+                </LinearLayout>
 
             </LinearLayout>
 

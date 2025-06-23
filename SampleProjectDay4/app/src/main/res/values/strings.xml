@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Sample Project Day4</string>
 
+    <string name="personalData_title">Personal Data</string>
     <string name="personalData_text1">Your Name</string>
     <string name="personalData_text2">Date of Birth</string>
     <string name="personalData_text3">Your Job</string>
@@ -10,6 +11,7 @@
     <string name="personalData_checkbox_male">Male</string>
     <string name="personalData_checkbox_female">Female</string>
 
+    <string name="community_title">Community</string>
     <string name="community_text1">Learn Stock, Educate the World</string>
     <string name="community_hint1">Search Something</string>
 
