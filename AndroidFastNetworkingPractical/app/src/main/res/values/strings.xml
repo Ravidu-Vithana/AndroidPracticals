@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidFastNetworkingPractical</string>
+    <string name="base_url">https://newsapi.org/v2/everything?apiKey=33c1af70fd034f4b95c3fb9ddb9db4ba</string>
+</resources>
