@@ -1,4 +1,4 @@
-package com.ryvk.paginationpractical
+package com.ryvk.paginationpractical.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
