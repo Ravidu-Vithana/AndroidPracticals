@@ -12,52 +12,70 @@ Demonstrates the use of key Android Architecture Components including:
 ### 2. **AndroidCustomComponents**
 Focuses on the creation of custom UI components such as custom views, compound views, and custom drawables.
 
-### 3. **DependencyInjection**
+### 3. **AndroidFastNetworkingPractical**
+Demonstrates network operations using the Fast Android Networking Library for:
+- Efficient network calls
+- JSON parsing
+- Image downloading and caching
+
+### 4. **DependencyInjection**
 Explores the concept of dependency injection in Android using:
 - Manual dependency injection techniques
 - Dagger Hilt for automatic and lifecycle-aware dependency management
 
-### 4. **Headline**
+### 5. **Headline**
 A modern news headline app showcasing clean UI with:
 - Jetpack components
 - API integration (simulated or placeholder)
 - Minimalist design
 
-### 5. **JetpackCompose**
+### 6. **JetpackCompose**
 An introduction to Jetpack Compose:
 - Declarative UI
 - State handling
 - Basic navigation
 
-### 6. **LayoutRevision**
+### 7. **LayoutRevision**
 Explores various XML layout types and related UI features:
 - ConstraintLayout, RelativeLayout, TableLayout, FrameLayout, TabbedLayout
 - RecyclerView and ListView implementations
 - Navigation Drawer integration
 - Basic Android UI animations
 
-### 7. **NavigationGraph**
+### 8. **NavigationGraph**
 Implements the Android Jetpack Navigation component:
 - Navigation Graph XML
 - Fragment transitions
 
-### 8. **SampleProjectDay4**
+### 9. **PaginationPractical**
+Implements Android paging concepts using:
+- Retrofit for network data fetching
+- Dagger Hilt for dependency injection
+- Paging library to load data in pages for better performance and UX
+
+### 10. **RetroFitPractical**
+A practical demonstration of networking in Android using:
+- Retrofit for REST API communication
+- Dagger Hilt for dependency injection
+- JSON parsing and API error handling
+
+### 11. **SampleProjectDay4**
 A day-wise Android practice project for Day 4:
 - Core Android concepts
 - UI building
 - Code structuring
 
-### 9. **SampleProjectDay5**
+### 12. **SampleProjectDay5**
 Continuation of daily practice on Day 5:
 - Hands-on UI/UX
 - RecyclerView
 
-### 10. **SharedPreferences**
+### 13. **SharedPreferences**
 Demonstrates data persistence using:
 - SharedPreferences for key-value storage
 - Secure and lightweight storage examples
 
-### 11. **ViewBinding**
+### 14. **ViewBinding**
 Showcases how to use ViewBinding to safely and efficiently interact with UI components.
 
 ---
