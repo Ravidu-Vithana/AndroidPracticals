@@ -88,6 +88,7 @@ fun UI(innerPaddingValues: PaddingValues = PaddingValues()) {
                     bytes = bytes,
                     outputStream = fos
                 ).decodeToString()
+                messageToEncrypt = ""
             }) {
                 Text(text = "Encrypt")
             }
