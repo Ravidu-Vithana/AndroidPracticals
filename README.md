@@ -10,7 +10,7 @@ This repository contains a collection of small Android projects and component de
 - [AndroidCustomComponents](#2-androidcustomcomponents)
 - [AndroidFastNetworkingPractical](#3-androidfastnetworkingpractical)
 - [DependencyInjection](#4-dependencyinjection)
-- [Headline](#5-headline)
+- [Headline (Sample Project)](#5-headline)
 - [IntegrationTesting](#6-integrationtesting)
 - [JetpackCompose](#7-jetpackcompose)
 - [LayoutRevision](#8-layoutrevision)
