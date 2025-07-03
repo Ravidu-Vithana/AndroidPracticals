@@ -105,7 +105,7 @@ Continuation of daily practice on Day 5:
 Explores security measures and best practices in Android including:
 - Data encryption and decryption techniques
 - R8/ProGuard configuration for code obfuscation
-- RootBear library usage for root detection and securing apps against tampering
+- RootBeer library usage for root detection and securing apps against tampering
 
 ### 15. **SharedPreferences**
 Demonstrates data persistence using:
