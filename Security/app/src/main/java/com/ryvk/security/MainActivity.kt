@@ -1,6 +1,7 @@
 package com.ryvk.security
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -27,6 +28,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.ryvk.security.ui.theme.SecurityTheme
+import com.scottyab.rootbeer.RootBeer
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
@@ -41,6 +43,12 @@ class MainActivity : ComponentActivity() {
                     UI(innerPadding)
                 }
             }
+        }
+        val rootBear = RootBeer(this@MainActivity)
+        if(rootBear.isRooted){
+            Toast.makeText(this@MainActivity, "Root Detected", Toast.LENGTH_SHORT).show()
+        }else{
+            Toast.makeText(this@MainActivity, "Root Not Detected", Toast.LENGTH_SHORT).show()
         }
     }
 }
