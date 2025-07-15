@@ -10,19 +10,22 @@ This repository contains a collection of small Android projects and component de
 - [AndroidCustomComponents](#2-androidcustomcomponents)
 - [AndroidFastNetworkingPractical](#3-androidfastnetworkingpractical)
 - [DependencyInjection](#4-dependencyinjection)
-- [Headline (Sample Project)](#5-headline)
-- [IntegrationTesting](#6-integrationtesting)
-- [JetpackCompose](#7-jetpackcompose)
-- [LayoutRevision](#8-layoutrevision)
-- [NavigationGraph](#9-navigationgraph)
-- [PaginationPractical](#10-paginationpractical)
-- [RetroFitPractical](#11-retrofitpractical)
-- [SampleProjectDay4](#12-sampleprojectday4)
-- [SampleProjectDay5](#13-sampleprojectday5)
-- [Security](#14-security)
-- [SharedPreferences](#15-sharedpreferences)
-- [UnitTesting](#16-unittesting)
-- [ViewBinding](#17-viewbinding)
+- [FileUploading](#5-fileuploading)
+- [FirebaseSampleApp](#6-firebasesampleapp)
+- [Headline](#7-headline)
+- [IntegrationTesting](#8-integrationtesting)
+- [JetpackCompose](#9-jetpackcompose)
+- [LayoutRevision](#10-layoutrevision)
+- [NavigationGraph](#11-navigationgraph)
+- [PaginationPractical](#12-paginationpractical)
+- [RetroFitPractical](#13-retrofitpractical)
+- [SampleMultiModuleApp](#14-samplemultimoduleapp)
+- [SampleProjectDay4](#15-sampleprojectday4)
+- [SampleProjectDay5](#16-sampleprojectday5)
+- [Security](#17-security)
+- [SharedPreferences](#18-sharedpreferences)
+- [UnitTesting](#19-unittesting)
+- [ViewBinding](#20-viewbinding)
 - [How to Run](#-how-to-run)
 - [Purpose](#-purpose)
 
@@ -49,75 +52,93 @@ Explores the concept of dependency injection in Android using:
 - Manual dependency injection techniques
 - Dagger Hilt for automatic and lifecycle-aware dependency management
 
-### 5. **Headline**
+### 5. **FileUploading**
+Simulates file upload processes in Android using:
+- Multipart/form-data requests
+- Handling file selection and upload progress
+
+### 6. **FirebaseSampleApp**
+Implements core Firebase services, including:
+- Firebase Authentication
+- Firestore database operations
+- Crashlytics for crash reporting
+- App Distribution for testing workflows
+
+### 7. **Headline**
 A modern news headline app showcasing clean UI with:
 - Jetpack components
 - API integration (simulated or placeholder)
 - Minimalist design
 
-### 6. **IntegrationTesting**
+### 8. **IntegrationTesting**
 Implements UI testing for Android applications using:
 - JUnit4 for instrumentation tests
 - UI interaction and validation techniques
 
-### 7. **JetpackCompose**
+### 9. **JetpackCompose**
 An introduction to Jetpack Compose:
 - Declarative UI
 - State handling
 - Basic navigation
 
-### 8. **LayoutRevision**
+### 10. **LayoutRevision**
 Explores various XML layout types and related UI features:
 - ConstraintLayout, RelativeLayout, TableLayout, FrameLayout, TabbedLayout
 - RecyclerView and ListView implementations
 - Navigation Drawer integration
 - Basic Android UI animations
 
-### 9. **NavigationGraph**
+### 11. **NavigationGraph**
 Implements the Android Jetpack Navigation component:
 - Navigation Graph XML
 - Fragment transitions
 
-### 10. **PaginationPractical**
+### 12. **PaginationPractical**
 Implements Android paging concepts using:
 - Retrofit for network data fetching
 - Dagger Hilt for dependency injection
 - Paging library to load data in pages for better performance and UX
 
-### 11. **RetroFitPractical**
+### 13. **RetroFitPractical**
 A practical demonstration of networking in Android using:
 - Retrofit for REST API communication
 - Dagger Hilt for dependency injection
 - JSON parsing and API error handling
 
-### 12. **SampleProjectDay4**
+### 14. **SampleMultiModuleApp**
+An example of a multi-module Android project featuring:
+- A network module handling all networking logic
+- A feature module displaying posts retrieved from the JSONPlaceholder mock API
+- Modular code structure for scalability and maintainability
+
+### 15. **SampleProjectDay4**
 A day-wise Android practice project for Day 4:
 - Core Android concepts
 - UI building
 - Code structuring
 
-### 13. **SampleProjectDay5**
+### 16. **SampleProjectDay5**
 Continuation of daily practice on Day 5:
 - Hands-on UI/UX
 - RecyclerView
 
-### 14. **Security**
+### 17. **Security**
 Explores security measures and best practices in Android including:
 - Data encryption and decryption techniques
 - R8/ProGuard configuration for code obfuscation
-- RootBeer library usage for root detection and securing apps against tampering
+- RootBear library usage for root detection and securing apps against tampering
 
-### 15. **SharedPreferences**
+### 18. **SharedPreferences**
 Demonstrates data persistence using:
 - SharedPreferences for key-value storage
 - Secure and lightweight storage examples
 
-### 16. **UnitTesting**
+### 19. **UnitTesting**
 Provides examples of unit testing in Android using:
 - JUnit4 to test individual functions
 - Testing classes and business logic in isolation
 
-### 17. **ViewBinding**
+### 20. **ViewBinding**
 Showcases how to use ViewBinding to safely and efficiently interact with UI components.
 
 ---
